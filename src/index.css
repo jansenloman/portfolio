@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white dark:bg-[#111827] text-gray-900 dark:text-white transition-colors duration-300;
+  }
+
+  * {
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+
+  .dark .dark\:bg-gradient {
+    background: linear-gradient(to bottom right, #111827, #1a1b1e);
+  }
+}
