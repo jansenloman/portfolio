@@ -1,8 +1,15 @@
-import { motion } from 'framer-motion';
-import { projects } from '../constants';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { motion } from "framer-motion";
+import { projects } from "../constants";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-const ProjectCard = ({ title, description, image, technologies, github, demo }) => (
+const ProjectCard = ({
+  title,
+  description,
+  image,
+  technologies,
+  github,
+  demo,
+}) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +67,10 @@ const ProjectCard = ({ title, description, image, technologies, github, demo }) 
 
 const Projects = () => {
   return (
-    <section id="projects" className="section-padding bg-gradient-to-br from-white to-gray-50 dark:from-[#111827] dark:to-[#1a1b1e]">
+    <section
+      id="projects"
+      className="section-padding bg-gradient-to-br from-white to-gray-50 dark:from-[#111827] dark:to-[#1a1b1e]"
+    >
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -87,4 +97,4 @@ const Projects = () => {
   );
 };
 
-export default Projects; 
+export default Projects;
